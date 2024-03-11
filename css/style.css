@@ -1,11 +1,45 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
 }
 
-ul {
-    list-style-type: none;
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+}
+
+/* -- ---------------------------header------------------------------ --*/
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-header {
@@ -17,6 +51,7 @@ ul {
     text-transform: uppercase;
     color: #4d5ae5;
     text-decoration: none;
+    margin-right: 76px;
 }
 
 .logo-header span {
@@ -24,19 +59,29 @@ ul {
 }
 
 .menu {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-right: auto;
 }
 
 .menu-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
     list-style-type: none;
 }
+
+
 
 .menu-link {
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0;
+
 }
 
 .menu-link:hover,
@@ -47,6 +92,12 @@ ul {
 
 .address {
     font-style: normal;
+}
+
+.mail-tel-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .header-contacts {
@@ -62,10 +113,9 @@ ul {
     color: #404bbf;
 }
 
+/* -- ---------------------------main------------------------------ --*/
 .main-title {
     background-color: #2e2f42;
-
-
 }
 
 .main-title-text {
