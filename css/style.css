@@ -78,15 +78,15 @@ body {
     align-items: center;
     gap: 40px;
     list-style-type: none;
-}
-
-.menu-item {
     padding: 24px 0;
 }
+
+
 
 .menu-link {
     color: #2e2f42;
     text-decoration: none;
+    padding: 24px 0;
 
 
 }
