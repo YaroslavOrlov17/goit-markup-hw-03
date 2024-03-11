@@ -120,9 +120,14 @@ body {
     color: #404bbf;
 }
 
-/* -- ---------------------------main------------------------------ --*/
+/* -- ---------------------------section1------------------------------ --*/
 .main-title {
     background-color: #2e2f42;
+}
+
+.section {
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .main-title-text {
@@ -132,15 +137,26 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto 48px;
 }
 
 .button {
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    margin: 0 auto;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
     cursor: pointer;
+    padding: 16px 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .button:hover,
