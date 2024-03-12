@@ -169,7 +169,18 @@ body {
 }
 
 .visually-hidden {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
 }
 
 .company-info-list {
@@ -227,7 +238,7 @@ body {
 }
 
 .team-text-space {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .team-title-name {
@@ -237,6 +248,7 @@ body {
     letter-spacing: 0.02em;
     color: #2e2f42;
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-prof {
@@ -273,9 +285,7 @@ body {
 }
 
 .card-border {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -287,6 +297,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 
@@ -299,16 +310,13 @@ body {
 /* -- ---------------------------footer----------------------------- --*/
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
-.space-footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
 
-}
 
 .footer-logo {
-    display: block;
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -328,4 +336,5 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
